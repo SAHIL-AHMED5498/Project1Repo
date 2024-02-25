@@ -6,12 +6,55 @@
     text-align: center;
 }
 
+@media only screen and (max-width: 500px) {
+    
+    
 h1{
 
     background-color: rgb(22, 117, 123);
     color: aliceblue;
     height: 5rem;
-    line-height: 5rem;
+    line-height: 2rem;
+    width: fit-content;
+    text-align: center;
+
+    
+}
+
+
+.choices{
+    display: flex;
+    align-items: flex-start;
+    gap: 0rem;
+    margin-top: 2rem;
+    flex-direction: row;
+    flex-basis: fit-content;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+}
+.choice{
+    height: 110px;
+    width: 110px;
+    
+    }
+
+
+}
+
+
+
+
+
+
+
+h1{
+
+    background-color: rgb(22, 117, 123);
+    color: aliceblue;
+    height: 5rem;
+    line-height: 2rem;
     
 }
 
