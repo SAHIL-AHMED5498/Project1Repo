@@ -12,16 +12,22 @@ let restart=document.querySelector(".restart");
 
      
 
-choices.forEach((choice) => {
 
+choices.forEach((choice) => {
+    
     choice.addEventListener("click", () => {
         userchoice = choice.getAttribute("id");
         console.log(`user choice = ${userchoice}`);
         compchoice = compchoicegen();
         console.log(`computer choice = ${compchoice}`);
 
-        play(userchoice, compchoice);})})
+        play(userchoice, compchoice);})  
+    
+    })
         
+    
+    
+
 
 
 function compchoicegen() {
@@ -34,6 +40,16 @@ function compchoicegen() {
 
 
 function play(userchoice, compchoice) {
+    restart.addEventListener("click",()=>{c=0;u=0;
+    cu.innerHTML=`${c}`;
+    uu.innerHTML=`${u}`;
+    result.innerHTML="none";
+    document.getElementById("result").style.backgroundColor="black";
+    })
+
+
+
+
     if (userchoice === compchoice) {
         result.innerHTML = "Draw";
         document.getElementById("result").style.backgroundColor="grey";
